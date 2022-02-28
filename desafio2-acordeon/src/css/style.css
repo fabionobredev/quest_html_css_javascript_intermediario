@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E5E5;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 655px;
+  height: 347px;
+  border-radius: 21px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.img {
+  width: 278px;
+  height: 293px;
+  background: url(../images/imagem.png) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 30px;
+  left: -100px;
+}
+
+.content {
+  width: 450px;
+  padding: 0 30px;
+}
+
+.content .title {
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 65px;
+  margin-bottom: 14px;
+}
+
+.content hr {
+  margin-bottom: 15px;
+}
+
+.box_quest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_quest .text label {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.box_quest input {
+  display: none;
+}
+
+.box_quest input:checked + .text p{
+  display: block;
+}
+
+.box_quest p {
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.box_quest input:checked ~ .btn {
+  width: 50px;
+  height: 15px;
+  margin-top: 5px;
+  background: url(../images/seta-colorida.png) center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.box_quest .btn {
+  width: 20px;
+  height: 15px;
+  margin-top: 5px;
+  background: url(../images/seta.png) center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
