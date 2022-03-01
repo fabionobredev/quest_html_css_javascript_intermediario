@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Desafio Formulário com Validação</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="content">
+      <h1>FICOU COM DÚVIDA? <br>NOS MANDE UMA MENSAGEM!</h1>
+      <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+      </p>
+    </section>
+
+    <form class="form" action="">
+      <div class="area_input">
+        <input id="input_name" type="text" placeholder="Nome Completo*">
+        <span id="message_name" class="message_hide">campo obrigatório</span>
+      </div>
+
+      <div class="area_input">
+        <input id="input_email" type="email" placeholder="Email*">
+        <span id="message_email" class="message_hide">campo obrigatório</span>
+      </div>
+
+      <div class="area_input">
+        <input id="input_telephone" type="text" placeholder="Telefone*">
+        <span id="message_telephone" class="message_hide">campo obrigatório</span>
+      </div>
+
+      <div class="area_input">
+        <textarea id="message" name="message" placeholder="Mensagem*"></textarea>
+        <span id="message_textarea" class="message_hide">campo obrigatório</span>
+      </div>
+
+      <span class="alert">*campos obrigatórios</span>
+      <button id="button" class="button">Enviar</button>
+    </form>
+    <div id="nome"></div>
+  </main>
+
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>

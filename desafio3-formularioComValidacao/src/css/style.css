@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  height: 400px;
+  background: url(../images/bg-repeat.jpg) center center repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content {
+  width: 40%;
+  color: #fff;
+}
+
+.content h1 {
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form {
+  width: 40%;
+  height: 95%;
+  background-color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+.area_input {
+  position: relative;
+  margin-top: 15px;
+}
+
+.form input, 
+.form textarea {
+  font-weight: 700;
+  font-size: 15px;
+  width: 260px;
+  border-radius: 5px;
+  border: solid 1px #000;
+  color: #A8A8A8;
+  padding: 12px;
+}
+
+.form input {
+  height: 35px;
+  outline: none;
+}
+
+.form textarea {
+  height: 100px; 
+  outline: none;
+}
+
+.form .alert {
+  display: inline-block;
+  width: 260px;
+  text-align: start;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.form .button {
+  width: 260px;
+  height: 40px;
+  margin-top: 15px;
+  background-color: #3CCC87;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilização validação */
+
+.form .message_hide {
+  display: none;
+}
+
+.form .input_invalid {
+  border-color: #F52E2E;
+}
+
+.form .input_valid {
+  border-color: #00C22B;
+}
+
+.form .message_invalid {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 8px;
+  width: 260px;
+  text-align: start;
+  color: #F52E2E;
+  position: absolute;
+  bottom: -8px;
+  left: 25px;
+}
+
+
